@@ -1,0 +1,44 @@
+
+			How to compile and run the program
+_______________________________________________________________________________________________
+
+Makefile has been provided for compiling the program on linux 
+(and unix-like) systems. Edit the Makefile to suit your need.
+
+Name of the executable produced is: hde
+
+To run the program type: 
+
+  ./hde file_with_parameters file_to_store_solutions graph_option
+
+-- file_with_parameters is the file that stores all the input parameters,
+-- file_to_store_solutions is the file that stores the Pareto set and the Pareto front obtained
+-- graph_option is equal to 1 for ploting the objective data realtime using gnuplot 
+
+** Example: ./hde ./inputs/2objectives/wfg4.input ./outputs/2objectives/wfg4.output 1
+
+
+					About the input parameters
+_______________________________________________________________________________________________
+
+The format of the input file is:
+
+problem's name
+population size
+number of generations
+number of objectives
+number of decision variables
+lower_bound_1 uper_bound_1
+lower_bound_2 uper_bound_2
+       .	       .
+	   .           .
+       .           .
+lower_bound_n uper_bound_n
+F
+CR
+
+
+The "inputs" directory contains several example input files
+
+
+
